@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.center{
+    text-align: center;
+}
+.p-15{
+    padding: 0 15%;
+}
+.ptb-10{
+    padding: 100px 30px 40px;
+    margin: 10px 0;
+}
+.fs-25{
+    font-size: 30px;
+}
+.br{
+    border-radius: 10px;
+}
+.about{
+    padding: 20px 30px;
+}
+.about::first-letter{
+    font-size: 45px;
+    font-weight: 600;
+}
+.skills{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: darkgrey;
+}
+.skills:hover{
+    background-color:unset;
+    transform: scale(1.5);
+}

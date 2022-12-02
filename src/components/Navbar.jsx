@@ -5,8 +5,8 @@ import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 export const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Flex justify={"space-between"} p={"15px 5%"} bg={"Background"}>
-      <Image src="../Images/logoGif.gif" w={"40px"} h={"40px"} />
+    <Flex justify={"space-between"} align={"center"} p={"10px 5%"} bg={"Background"}>
+      <Image src="../Images/logoGif.gif" w={"60px"} h={"60px"} />
       <Tabs variant="unstyled">
         <TabList>
           <Tab _selected={{ color: "white", bg: "red.500" }}>Home</Tab>

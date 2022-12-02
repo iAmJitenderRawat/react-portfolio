@@ -14,7 +14,7 @@ import { SiLeetcode } from "react-icons/si";
 
 export const Home = () => {
   return (
-    <HStack p={"80px 20%"}>
+    <HStack p={"80px 20% 0"}>
       <VStack>
         <Image
           src={"https://avatars.githubusercontent.com/u/107478598?v=4"}

@@ -34,3 +34,12 @@
     background-color:unset;
     transform: scale(1.5);
 }
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid beige;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.m-10{
+    margin: 10px;
+}

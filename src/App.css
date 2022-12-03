@@ -1,45 +1,59 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
 }
-.center{
-    text-align: center;
+.center {
+  text-align: center;
 }
-.p-15{
-    padding: 0 15%;
+.p-15 {
+  padding: 0 15%;
 }
-.ptb-10{
-    padding: 100px 30px 40px;
-    margin: 10px 0;
+.ptb-10 {
+  padding: 100px 30px 40px;
+  margin: 10px 0;
 }
-.fs-25{
-    font-size: 30px;
+.fs-25 {
+  font-size: 30px;
 }
-.br{
-    border-radius: 10px;
+.br {
+  border-radius: 10px;
 }
-.about{
-    padding: 20px 30px;
+.about {
+  padding: 20px 30px;
 }
-.about::first-letter{
-    font-size: 45px;
-    font-weight: 600;
+.about:hover{
+    transform: scale(1.2);
 }
-.skills{
-    padding: 20px;
-    border-radius: 10px;
-    background-color: darkgrey;
+.about::first-letter {
+  font-size: 45px;
+  font-weight: 600;
 }
-.skills:hover{
-    background-color:unset;
-    transform: scale(1.5);
+.skills {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: darkgrey;
 }
-.card{
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid beige;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.skills:hover {
+  background-color: unset;
+  transform: scale(1.5);
 }
-.m-10{
-    margin: 10px;
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid beige;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.m-10 {
+  margin: 10px;
+}
+.lang {
+  width: 500px;
+  margin: 30px auto;
+}
+.stats:hover{
+    transform: scale(1.2);
+}
+.card:hover{
+    transform: scale(1.15);
 }

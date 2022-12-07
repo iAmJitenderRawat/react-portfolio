@@ -33,10 +33,10 @@ export const Home = () => {
             {" "}
             Jitender
           </Text>
-          ✋👋
+          <div className="hand">👋</div>
         </Heading>
-        <Heading as="h2" size="lg" display={"flex"}>
-          I'm
+        <Heading as="h2" size="lg">
+          I'm an aspiring
           <TypeWriterEffect
             textStyle={{
               //   fontFamily: "Red Hat Display",

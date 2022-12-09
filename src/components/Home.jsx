@@ -11,11 +11,11 @@ import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaHackerrank } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
-import TypeWriterEffect from "react-typewriter-effect";
+import Typewriter from "typewriter-effect";
 
 export const Home = () => {
   return (
-    <HStack p={"80px 15% 0"} justify={"space-around"}>
+    <HStack p={"80px 15% 0"} justify={"space-around"} id="home">
       <VStack>
         <Image
           src={"https://avatars.githubusercontent.com/u/107478598?v=4"}
@@ -37,23 +37,17 @@ export const Home = () => {
         </Heading>
         <Heading as="h2" size="lg">
           I'm an aspiring
-          <TypeWriterEffect
-            textStyle={{
-              //   fontFamily: "Red Hat Display",
-              color: "red",
-              //   fontWeight: 500,
-              //   fontSize: "1.5em",
+          <Typewriter
+            options={{
+              strings: [
+                "Front-end Developer.",
+                "Back-end Developer.",
+                "Full Stack Web Developer.",
+              ],
+              wrapperClassName:'Typewriter__wrapper',
+              autoStart: true,
+              loop: true,
             }}
-            // startDelay={2000}
-            cursorColor="white"
-            multiText={[
-              " Full Stack Web Developer.",
-              " Frontend Developer.",
-              " Backend Developer.",
-            ]}
-            multiTextLoop={true}
-            multiTextDelay={1000}
-            typeSpeed={120}
           />
         </Heading>
         <List spacing={3}>

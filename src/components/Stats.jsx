@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Stats = () => {
   return (
-    <div className="p-15">
+    <div className="p-15" id="stats">
       <Heading className="center ptb-10">GitHub Stats</Heading>
       <Flex justify={"space-between"} m={"30px 0"}>
         <img
@@ -29,3 +29,4 @@ export const Stats = () => {
     </div>
   );
 }
+

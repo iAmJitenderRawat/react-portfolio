@@ -6,6 +6,17 @@
 .center {
   text-align: center;
 }
+
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.Typewriter__wrapper {
+  color: red;
+}
+
 @keyframes wave {
   0% {
     transform: rotate(0deg);
@@ -53,8 +64,8 @@
 .about {
   padding: 20px 30px;
 }
-.about:hover{
-    transform: scale(1.2);
+.about:hover {
+  transform: scale(1.2);
 }
 .about::first-letter {
   font-size: 45px;
@@ -64,7 +75,7 @@
   padding: 20px;
   border-radius: 10px;
   background-color: darkgrey;
-  transition:transform 1s;
+  transition: transform 1s;
 }
 .skills:hover {
   background-color: unset;
@@ -83,15 +94,54 @@
   width: 500px;
   margin: 30px auto;
 }
-.stats:hover{
-    transform: scale(1.2);
+.stats:hover {
+  transform: scale(1.2);
 }
-.card:hover{
-    transform: scale(1.15);
+.card:hover {
+  transform: scale(1.15);
 }
-.burlywood{
-  color:burlywood;
+.burlywood {
+  color: burlywood;
 }
-.silver{
+.silver {
   color: silver;
+}
+#form {
+  display: flex;
+  /* gap: 20px; */
+  width: 80%;
+  margin: 20px auto;
+  /* background-color: rgb(200, 200, 252); */
+  /* padding: 100px; */
+  /* border-radius: 50%; */
+}
+#form > form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  font-size: 1.5rem;
+  padding: 20px;
+  background-color: #EEF1FF;
+}
+
+#form > form > input,
+#form > form > textarea {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+#form > form > button {
+  border-radius: 5px;
+  width: 20%;
+  margin:10px auto 0;
+  background-color:royalblue;
+}
+#form>.left{
+  width: 40%;
+    border-radius: 20px;
+}
+#form>.right{
+  width: 40%;
+  border-radius: 20px;
 }

@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Skills = () => {
   return (
-    <div className="center p-15">
+    <div className="center p-15" id="skills">
       <Heading className="ptb-10">My Technical Skills</Heading>
       <Grid templateColumns="repeat(4, 1fr)" gap={12}>
         <GridItem className="skills">

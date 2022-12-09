@@ -125,7 +125,7 @@
   background-color: #EEF1FF; */
 }
 
-#form > form > input,
+#form > form input,
 #form > form > textarea {
   border-radius: 5px;
   margin-bottom: 10px;
@@ -141,6 +141,7 @@
   width: 20%;
   margin:10px auto 0;
   background-color:royalblue;
+  color: #fff;
 }
 #form>.left{
   width: 40%;

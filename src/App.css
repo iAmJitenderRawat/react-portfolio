@@ -121,8 +121,8 @@
   width: 70%;
   margin: auto;
   font-size: 1.5rem;
-  padding: 20px;
-  background-color: #EEF1FF;
+  /* padding: 20px;
+  background-color: #EEF1FF; */
 }
 
 #form > form > input,
@@ -130,7 +130,12 @@
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 0 10px;
+  background-color:aliceblue;
+  color: #000;
 }
+/* #form > form > label{
+  color: darkslategrey;
+} */
 #form > form > button {
   border-radius: 5px;
   width: 20%;

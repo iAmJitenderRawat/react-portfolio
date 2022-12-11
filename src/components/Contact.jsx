@@ -1,30 +1,30 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Box, Heading,Image } from "@chakra-ui/react";
+import { Box, Heading, Image } from "@chakra-ui/react";
 import { useState } from "react";
 import { AlertMsg } from "./AlertMsg";
 import { useEffect } from "react";
 
 export const Contact = () => {
   const form = useRef();
-  const [alert, setAlert]=useState(false);
+  const [alert, setAlert] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_wozmlsn",
-        "template_gwx3m9o",
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         form.current,
-        "JvfGSQr4n7SlXsGrv"
+        import.meta.env.VITE_PRIVATE_KEY
       )
       .then((res) => console.log("Success!", res.text))
       .catch((err) => console.log("Failed...", err.text));
-      setAlert(!alert);
+    setAlert(!alert);
   };
 
   useEffect(() => {
-    setTimeout((alert) => {
+    setTimeout(() => {
       setAlert(false);
     }, 3000);
   }, [alert]);
@@ -35,7 +35,7 @@ export const Contact = () => {
       {alert ? <AlertMsg /> : null}
       <Box id="form">
         <Box className={"left"}>
-          <Image src="../Images/contact.png"  />
+          <Image src="../Images/contact.png" />
         </Box>
         <form ref={form} onSubmit={sendEmail} className="right">
           <label>Name</label>
